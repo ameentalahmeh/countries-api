@@ -34,22 +34,22 @@ $ npm i
 **3. Create your MongoDB**
 
 _You have two options for create a mongoDB:_
-> **local mongoDB** see:  https://docs.mongodb.com/manual/installation/#mongodb-installation-tutorials.
+> **Local mongoDB** see:  https://docs.mongodb.com/manual/installation/#mongodb-installation-tutorials.
 
 >**Cloud mongoDB (Atlas)** see: https://docs.atlas.mongodb.com/getting-started/ 
 
 
 **4. Add initial environment Variables**
 
-Create a `.env` file in the root directory.
+ Create a `.env` file in the root directory.
 
-_Add the following line to make your database work, inserting your own username and password._
+   - _Add the following line to make your database work, inserting your own username and password._
 
-    DB_URL = mongodb://[username:password@][host]:[port]/[databasename]
+          DB_URL = mongodb://[username:password@][host]:[port]/[databasename]
 
-_Add server port_
+   - _Add server port_
 
-    PORT=<ANY_FREE_PORT>
+          PORT=<ANY_FREE_PORT>
 
 **5. Build countries.json file**
 
