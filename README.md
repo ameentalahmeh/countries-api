@@ -1,5 +1,5 @@
 # Description
-Rest API based on Node Js (Express) for countries, which allows users to search on countries' details. Plus, it allows admins to download the countries as a Json file.
+Rest API based on Node Js (Express) for countries, which allows users to read all kinds of information about countries by searching on countries' details. Plus, it allows admins to download the countries as a Json file.
 
 # Functionality
  - Get all countries.
