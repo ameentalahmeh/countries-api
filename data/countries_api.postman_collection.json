@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "f440c129-6c4b-4949-8963-4cd58f675dfa",
+		"name": "Countries API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Download Countries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-ADMIN",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/countries/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by cca2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/?cca2=PS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "cca2",
+							"value": "PS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by cca3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/?cca3=PSE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "cca3",
+							"value": "PSE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by ccn3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/?ccn3=275",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "ccn3",
+							"value": "275"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by name (common name)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/?name=Palestine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Palestine"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by name (official name)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/?name=State of Palestine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "State of Palestine"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get country currencies by cca2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/PS/currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						"PS",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Group countries by region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/group/?region=Asia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						"group",
+						""
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "Asia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Group countries by language",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/countries/group/?lang=Arabic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"countries",
+						"group",
+						""
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "Arabic"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
