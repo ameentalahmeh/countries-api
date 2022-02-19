@@ -9,7 +9,7 @@ const getCountries = async (req, res) => {
         let searchQuery = req.query;
         let searchParam = Object.keys(searchQuery)[0];
 
-        // Find the match countries
+        // Find matching countries
         if (searchQuery) {
             if (searchParam == "name") {
                 searchQueryResult = await db.collection("country").find({ $or: [{ "name.common": searchQuery['name'] }, { "name.official": searchQuery['name'] }] }).toArray();
@@ -29,7 +29,7 @@ const getCountries = async (req, res) => {
 
 const getCountryCurrenciesByCca2 = async (req, res) => {
     try {
-        // Access the provided country' cca2
+        // Access the provided country's cca2
         let countryCca2 = req.params.cca2;
 
         // Find the country currencies
@@ -38,7 +38,7 @@ const getCountryCurrenciesByCca2 = async (req, res) => {
             { $project: { _id: 0, country: "$name.common", currencies: "$currencies" } }
         ]).toArray();
 
-        let inValidCCA2 = { "message": `No countries belongs to CCA2 (${countryCca2}) code!` };
+        let inValidCCA2 = { "message": `No countries belong to CCA2 (${countryCca2}) code!` };
 
         return res.status(200).json(searchQueryResult.length > 0 ? searchQueryResult : inValidCCA2);
 
@@ -56,7 +56,7 @@ const groupCountries = async (req, res) => {
         let searchQuery = req.query;
         let searchParam = Object.keys(searchQuery)[0];
 
-        // Find the match countries
+        // Find matching countries
         if (searchParam == "region") {
             searchQueryResult = await db.collection("country").aggregate([
                 { $match: searchQuery },

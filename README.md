@@ -13,7 +13,7 @@ Rest API based on Node Js (Express) for countries, which allows users to search 
  - **DB:** MongoDB.
 
 # Getting Started
-How to get the project up and running on your local machine.
+How to get the project up and run it on your local machine.
 
 _Please ensure you have this software **installed and running** on your local machine **before** you attempt to run this API._
 
@@ -43,7 +43,7 @@ _You have two options for create a mongoDB:_
 
  Create a `.env` file in the root directory.
 
-   - _Add the following line to make your database work, inserting your own username and password._
+   - _Add the following line to make your database works by inserting your username and password._
 
           DB_URL = mongodb://[username:password@][host]:[port]/[databasename]
 
