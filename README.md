@@ -23,12 +23,12 @@ _Please ensure you have this software **installed and running** on your local ma
 
 **1. Clone the repo:**
 
-```$ git clone https://github.com/ameentalahmeh/nadsoft-task.git```
+```$ git clone https://github.com/ameentalahmeh/countries-api.git```
 
 **2. Install dependencies**
 
 ```
-$ cd nadsoft-task
+$ cd countries-api
 $ npm i
 ```
 **3. Create your MongoDB**
